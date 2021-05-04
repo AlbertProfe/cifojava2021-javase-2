@@ -5,8 +5,6 @@ public class TestPerson {
 	public static void executePerson() {
 
 		createAndTestObjectsPerson();
-		
-
 	}
 
 	public static void createAndTestObjectsPerson() {
@@ -32,7 +30,6 @@ public class TestPerson {
 
 		System.out.println(isa);
 			
-		
 		sergi.setName("Sergi");
 		sergi.setAge(20);
 		sergi.setWeigth(60);

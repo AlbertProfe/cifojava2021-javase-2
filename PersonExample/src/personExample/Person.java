@@ -34,7 +34,6 @@ public class Person {
 	//Methods from Person Class
 	
 	public void becomeOlder () {
-		
 		this.age = age + 1;
 	}
 	
