@@ -9,6 +9,7 @@ public class Person {
 	public int heigth;
 	public double basicSalary;
 	
+	
 	//Constructor from Person Class
 	public Person() {
 		
@@ -21,6 +22,7 @@ public class Person {
 		this.weigth = weigth;
 		this.heigth = heigth;
 		this.basicSalary = basicSalary;
+		
 	}
 
 	public Person(String name, int age) {
@@ -72,8 +74,8 @@ public class Person {
 	//toString
 	@Override
 	public String toString() {
-		return "Person Fields: (name=" + name + ", age=" + age + ", weigth=" + weigth + ", heigth=" + heigth + ", basicSalary="
-				+ basicSalary + ")";
+		return "Person Data Fields:\n  name=" + name + ", age=" + age + ", weigth=" + weigth + ", heigth=" + heigth + ", basicSalary="
+				+ basicSalary + "\n";
 	}
 	
 	
