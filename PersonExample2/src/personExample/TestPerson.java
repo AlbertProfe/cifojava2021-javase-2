@@ -14,7 +14,7 @@ public class TestPerson {
 		//that is, an empty object
 		Person sergi = new Person();
 
-		// an objecte wiht just a pair of parameters: name and age
+		// an object with just a pair of parameters: name and age
 		Person isa = new Person("Isabel", 18);
 
 		// an object with all the parameters used		
