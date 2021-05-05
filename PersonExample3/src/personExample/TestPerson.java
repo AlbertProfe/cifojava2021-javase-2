@@ -5,8 +5,8 @@ public class TestPerson {
 	public static void executePerson() {
 
 		// createAndTestObjectsPerson();
-		testMethodsObjectsPerson();
-		
+		// testMethodsObjectsPerson();
+		testListObjectsPerson();
 	}
 
 	public static void createAndTestObjectsPerson() {
@@ -63,6 +63,12 @@ public class TestPerson {
 		System.out.println("Jack year net Salary is: " + jack.yearNetSalary());
 	}
 
-	
+	private static void testListObjectsPerson() {
+
+	}
+
+	private static void printPeople() {
+
+	}
 
 }
