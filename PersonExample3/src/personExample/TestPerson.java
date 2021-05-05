@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 public class TestPerson {
 
-	//------ start ----------------------------------
-	//it is function is to execute all the designed methods
+	//------ start and collection of test methods calls -----------------------
+	//its function is to execute all the designed methods
 	// test them etc ...
+	//this method contains all the calls to other methods
 	// that is, to start the program and define
 	// the tempo, the sequencing of executing
 	public static void executePerson() {
@@ -16,7 +17,7 @@ public class TestPerson {
 		testListObjectsPerson();
 	}
 
-	//----- no lo se metodos -------
+	//------ collection of test methods  -----------------------
 	public static void createAndTestObjectsPerson() {
 
 		// i am going to create an object WITHOUT parameters,
@@ -87,8 +88,7 @@ public class TestPerson {
 		people.add(alexa);
 		people.add(marc);
 		people.add(jack);
-		
-		
+			
 		//What do?
 		//print people
 		//How it works?
@@ -104,7 +104,6 @@ public class TestPerson {
 	//--------utils ------------------
 	private static void printPeople (ArrayList<Person> arrayToPrint) {
 		
-
 			System.out.println("People:\n");
 
 			for (Person personToPrint : arrayToPrint) {
