@@ -1,7 +1,14 @@
 package personExample;
 
+import java.util.ArrayList;
+
 public class TestPerson {
 
+	//------ start ----------------------------------
+	//it is function is to execute all the designed methods
+	// test them etc ...
+	// that is, to start the program and define
+	// the tempo, the sequencing of executing
 	public static void executePerson() {
 
 		// createAndTestObjectsPerson();
@@ -9,6 +16,7 @@ public class TestPerson {
 		testListObjectsPerson();
 	}
 
+	//----- no lo se metodos -------
 	public static void createAndTestObjectsPerson() {
 
 		// i am going to create an object WITHOUT parameters,
@@ -64,11 +72,47 @@ public class TestPerson {
 	}
 
 	private static void testListObjectsPerson() {
-
+		
+		//create a variable people that is a ArrayList and assign a new ArrayList which
+		//points to Person
+		ArrayList<Person> people = new ArrayList<Person>();
+		
+		//create three Person Objects
+		//remember: i need three constructors!!!
+		Person alexa = new Person("Alexa", 25, 60, 180, 2500); // 5 parameters: string, int, int, int, int
+		Person jack = new Person("Jackson Pollock", 25); // 2 parameters, string, int
+		Person marc = new Person(); // 0 parameters
+		
+		//we add the previous created objects to People ArrayList
+		people.add(alexa);
+		people.add(marc);
+		people.add(jack);
+		
+		
+		//What do?
+		//print people
+		//How it works?
+		//call printPeople -static method- with parameter people
+		//people is an ArrayList of Person objects
+		printPeople(people);
+		
+		//System.out.println(people.toString());
+		
 	}
+	
+	
+	//--------utils ------------------
+	private static void printPeople (ArrayList<Person> arrayToPrint) {
+		
 
-	private static void printPeople() {
+			System.out.println("People:\n");
 
+			for (Person personToPrint : arrayToPrint) {
+				System.out.println(personToPrint);
+			}
+			System.out.println("\n");
+
+		
 	}
 
 }
