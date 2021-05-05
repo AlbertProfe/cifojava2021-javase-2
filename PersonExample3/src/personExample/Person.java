@@ -58,12 +58,6 @@ public class Person {
 
 		return yearNetSalary;
 	}
-
-	
-	
-	
-	
-	
 	
 	// Getters and Setters and toString
 	public String getName() {

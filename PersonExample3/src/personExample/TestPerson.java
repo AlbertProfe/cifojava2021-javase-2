@@ -3,21 +3,25 @@ package personExample;
 import java.util.ArrayList;
 
 public class TestPerson {
-
-	// ------ start and collection of test methods calls -----------------------
+	
 	// this method contains all the calls to other methods
 	// its function is to execute all the designed methods
 	// using the calls to test them and see how they work, etc ...
 	// that is, to start the program and define
 	// the order of execution of tests, the sequencing of executing
+	// -------------------------------------------------------------------
+	// ------ start and collection of test methods calls -----------------
+	// -------------------------------------------------------------------
 	public static void executePerson() {
 
 		// createAndTestObjectsPerson();
 		// testMethodsObjectsPerson();
 		testListObjectsPerson();
 	}
-
-	// ------ collection of test methods -----------------------
+	
+	// -------------------------------------------------------------------
+	// ------ collection of test methods ---------------------------------
+	// -------------------------------------------------------------------
 	public static void createAndTestObjectsPerson() {
 
 		// i am going to create an object WITHOUT parameters,
@@ -99,8 +103,10 @@ public class TestPerson {
 		// System.out.println(people.toString());
 
 	}
-
-	// --------utils ------------------
+	
+	// -------------------------------------------------------------------
+	// ------- utils -----------------------------------------------------
+	// -------------------------------------------------------------------
 	public static void printPeople(ArrayList<Person> arrayToPrint) {
 
 		System.out.println("People:\n");
