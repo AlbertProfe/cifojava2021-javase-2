@@ -7,7 +7,7 @@ public class TestPerson {
 	// ------ start and collection of test methods calls -----------------------
 	// this method contains all the calls to other methods
 	// its function is to execute all the designed methods
-	// using the calls and then test them and see how they work, etc ...
+	// using the calls to test them and see how they work, etc ...
 	// that is, to start the program and define
 	// the order of execution of tests, the sequencing of executing
 	public static void executePerson() {
