@@ -35,7 +35,6 @@ public class Person {
 	}
 
 	// Methods from Person Class
-
 	public void becomeOlder() {
 		this.age = age + 1;
 	}
@@ -69,7 +68,8 @@ public class Person {
 		
 		for (Expense expense : this.expenses) {
 			
-			if (expense.getDate().getMonth() ==  month ) expensesMonth = expensesMonth + expense.getValue();
+			if (expense.getDate().getMonth() ==  month ) 
+				expensesMonth = expensesMonth + expense.getValue();
 			
 		}
 		

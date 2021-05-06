@@ -14,9 +14,9 @@ public class TestPerson {
 	// -------------------------------------------------------------------
 	public static void executePerson() {
 
-		// createAndTestObjectsPerson();
-		// testMethodsObjectsPerson();
-		// testListObjectsPerson();
+		//createAndTestObjectsPerson();
+		//testMethodsObjectsPerson();
+		//testListObjectsPerson();
 		testExpensesPerson();
 	}
 	
@@ -114,11 +114,19 @@ public class TestPerson {
 		//option A
 		
 		MyDate mondayMorning = new MyDate (4, 5, 2021);
-		
 		Expense internetYoigoApril = new Expense ("Internet 200MB Yoigo", 30, mondayMorning);
 		
 		isa.expenses.add(internetYoigoApril);
 		
+		MyDate lastSundayDate = new MyDate (14, 5 , 2021);
+		Expense lastSundayFun = new Expense ("Bar and drinks and friends",110, lastSundayDate);
+		
+		isa.expenses.add(lastSundayFun);
+		
+		MyDate lastSaturdayDate = new MyDate (14, 6 , 2021);
+		Expense lastSaturdayFun = new Expense ("Bar and drinks and friends",110, lastSaturdayDate);
+		
+		isa.expenses.add(lastSaturdayFun);
 		
 		//option B
 		
