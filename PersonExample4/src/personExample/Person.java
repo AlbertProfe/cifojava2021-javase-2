@@ -32,6 +32,7 @@ public class Person {
 
 		this.name = name;
 		this.age = age;
+		this.expenses = new ArrayList<Expense>();
 	}
 
 	// Methods from Person Class
