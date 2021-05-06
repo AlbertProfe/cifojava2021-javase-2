@@ -107,36 +107,48 @@ public class TestPerson {
 	
 	public static void testExpensesPerson() {
 		
+		//creation of an object person: isa
 		Person isa = new Person ("Isabel", 18, 180, 60, 3000);
 		
+		//just printing isa object
 		System.out.println(isa);
 		
 		//option A
-		
+		//first I must create date object and then expense object,
+		//I use date object within expense object
 		MyDate mondayMorning = new MyDate (4, 5, 2021);
 		Expense internetYoigoApril = new Expense ("Internet 200MB Yoigo", 30, mondayMorning);
 		
-		isa.expenses.add(internetYoigoApril);
+		// i add an expense -internetYoigoApril- to expenses arrayList of isa
+		//isa.expenses.add(internetYoigoApril);
+		isa.getExpenses().add(internetYoigoApril);
+		
 		
 		MyDate lastSundayDate = new MyDate (14, 5 , 2021);
 		Expense lastSundayFun = new Expense ("Bar and drinks and friends",110, lastSundayDate);
+		//isa.expenses.add(lastSundayFun);
 		
-		isa.expenses.add(lastSundayFun);
+		isa.getExpenses().add(lastSundayFun);
 		
 		MyDate lastSaturdayDate = new MyDate (14, 6 , 2021);
 		Expense lastSaturdayFun = new Expense ("Bar and drinks and friends",110, lastSaturdayDate);
+		//isa.expenses.add(lastSaturdayFun);
 		
-		isa.expenses.add(lastSaturdayFun);
+		isa.getExpenses().add(lastSaturdayFun);
+		
 		
 		//option B
+		// i create date and expense without "tag", straight as parameter of the parent object
+		// and then  i add this expense to isa arrayList expenses
+		//isa.expenses.add(new Expense("Internet 200MB Yoigo", 40, new MyDate (1,5,2021)));
+		isa.getExpenses().add(new Expense("Internet 200MB Yoigo", 40, new MyDate (1,5,2021)));
 		
 		
-		isa.expenses.add(new Expense("Internet 200MB Yoigo", 40, new MyDate (1,5,2021)));
-		
-		System.out.println("Expenses: " + isa.calculateExpenses(5));
-		
-		
+		//call to method -calculateExpenses(5)- to calculate the expenses of month May -5-
+		System.out.println("Expenses: " + isa.calculateExpenses(5)); // 180€
+			
 	}
+	
 	// -------------------------------------------------------------------
 	// ------- utils -----------------------------------------------------
 	// -------------------------------------------------------------------

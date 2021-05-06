@@ -6,9 +6,7 @@ public class Expense {
 	public int value;
 	public MyDate date;
 	
-	
 	public Expense() {
-	
 	}
 
 	public Expense(String name, int value, MyDate date) {

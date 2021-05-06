@@ -67,12 +67,9 @@ public class Person {
 		double expensesMonth = 0.0;
 		
 		for (Expense expense : this.expenses) {
-			
 			if (expense.getDate().getMonth() ==  month ) 
 				expensesMonth = expensesMonth + expense.getValue();
-			
-		}
-		
+		}		
 		
 		return expensesMonth;
 	}
@@ -116,6 +113,14 @@ public class Person {
 
 	public void setBasicSalary(double basicSalary) {
 		this.basicSalary = basicSalary;
+	}
+	
+	public ArrayList<Expense> getExpenses() {
+		return expenses;
+	}
+
+	public void setExpenses(ArrayList<Expense> expenses) {
+		this.expenses = expenses;
 	}
 
 	// toString
