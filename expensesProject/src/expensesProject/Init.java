@@ -4,9 +4,9 @@ public class Init {
 
 	public static void main(String[] args) {
 
-		Controller.AppStarting();
+		MainController.AppStarting();
 
-		System.out.println("\nBye bye my friend...");
+		System.out.println("\nFinishing and closing Expenses project...");
 
 	}
 }

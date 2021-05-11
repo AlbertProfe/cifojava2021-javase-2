@@ -3,22 +3,18 @@ package expensesProject;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Controller {
+public class MainController {
 
 	public static void AppStarting() {
 
 		ArrayList<User> users = new ArrayList<User>();
-
+		Scanner reader = new Scanner(System.in);
+		
 		while (true) {
 
-			Scanner reader = new Scanner(System.in);
-
-			System.out.println("Welcome to Expenses Managment");
-			System.out.println("-------------------------\n");
-			System.out.println("1-Create user");
-			System.out.println("2-Login into Expenses");
-			System.out.println("3-Quit");
-
+			
+			Menu.mainMenu();
+			
 			String command = reader.nextLine();
 
 			if (command.equals("quit")) {
@@ -26,16 +22,25 @@ public class Controller {
 
 			} else if (command.equals("create")) {
 				UserCreation.createuser(reader, users);
+				//UserCreation.createuser(reader);
 
 			} else if (command.equals("login")) {
 				// to-do login
+				
+			} else if (command.equals("language")) {
+				// to-do language
+					
 			} else {
 				System.out
-						.println("Please, you have to write \"create\", \"login\" or \"quit\". Try another time ...\n");
+						.println("\nPlease, you have to write \"create\", \"login\" or \"quit\". Try another time ...\n");
 			}
 
 		}
+		
+		reader.close();
 
 	}
+	
+	
 
 }

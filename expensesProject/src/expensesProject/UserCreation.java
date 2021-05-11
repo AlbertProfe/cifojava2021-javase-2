@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserCreation {
-
 	public static void createuser(Scanner reader, ArrayList<User> users) {
+		// public static void createuser(Scanner reader) {
 
 		User newUser = new User();
 
