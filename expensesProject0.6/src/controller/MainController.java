@@ -14,16 +14,15 @@ public class MainController {
 
 		ArrayList<User> users = new ArrayList<User>();
 		HashMap<String, Language> languages = LanguagesController.initLanguages();
-		
+
 		Language language = languages.get("english");
 		Scanner reader = new Scanner(System.in);
 		String command;
-	
 
 		while (true) {
 
 			MenuController.mainMenu(language.getTag());
-			 command = reader.next();
+			command = reader.next();
 
 			if (command.equals(language.getQuit())) {
 				reader.close();
@@ -31,20 +30,18 @@ public class MainController {
 
 			} else if (command.equals(language.getCreate())) {
 				UserController.createUser(reader, users, language);
-				
 
 			} else if (command.equals(language.getLogin())) {
-				
+
 				users = LoginController.validateUser(reader, users);
 
 				if (UsersUtils.getValidatedUser(users) != null) {
 					User userValidated = new User();
 					userValidated = UsersUtils.getValidatedUser(users);
-					
+
 					ExpensesController.runExpenses(reader, userValidated);
 					System.out.println("expenses finshing...");
 				}
-				
 
 			} else if (command.equals(language.getLanguage())) {
 
@@ -53,13 +50,10 @@ public class MainController {
 			} else {
 				System.out.println(
 						"\nPlease, you have to write \"create\", \"login\" or \"quit\". Try another time ...\n");
-				
-				
+
 			}
 
 		}
-
-	
 
 	}
 

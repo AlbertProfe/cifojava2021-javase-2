@@ -45,6 +45,18 @@ public class User {
 		
 	}
 	
+	public void delete(Expense expense) {
+		
+		
+		this.expenses.remove(expense);
+	}
+	
+	public void update(int index, Expense expense) {
+		
+		this.expenses.set(index, expense);
+		
+	}
+
 
 	public ArrayList<Expense> getExpenses() {
 		return expenses;
@@ -127,6 +139,9 @@ public class User {
 		return "User [name=" + name + ", surname=" + surname + ", age=" + age + ", email=" + email + ", userName="
 				+ userName + ", password=" + password + "]";
 	}
+
+	
+	
 
 	
 

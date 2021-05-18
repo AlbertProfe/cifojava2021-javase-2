@@ -27,7 +27,7 @@ public class ExpensesController {
 			} else if (command.equals("delete")) {
 				ExpensesManagement.deleteExpense(reader, userValidated);
 
-			} else if (command.equals("upadate")) {
+			} else if (command.equals("update")) {
 				
 				ExpensesManagement.updateExpense(reader, userValidated);
 
@@ -36,7 +36,8 @@ public class ExpensesController {
 
 			} else {
 				System.out.println(
-						"\nPlease, you have to write \"add\", \"delete\" or \"upadate\" or \"list\" or \"quit\". Try another time ...\n");
+						"\nPlease, you have to write \"add\", \"delete\" or "
+						+ "\"upadate\" or \"list\" or \"quit\". Try another time ...\n");
 				
 			}
 
