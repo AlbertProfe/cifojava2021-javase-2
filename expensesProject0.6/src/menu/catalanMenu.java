@@ -13,7 +13,7 @@ public class catalanMenu {
 		System.out.print("Opció: ");
 
 	}
-
+	
 	public static void loginMenu() {
 	}
 

@@ -5,9 +5,7 @@ package utils;
 public class UserUtils {
 	
 	public static String createEmail(String name, String surname) {
-		// scope #6
-
-		
+				
 		
 		String email = name.charAt(0) + surname + "@java.com";
 
@@ -15,7 +13,7 @@ public class UserUtils {
 	}
 
 	public static String createPassword() {
-		// scope #7
+		
 
 		String password = "";
 

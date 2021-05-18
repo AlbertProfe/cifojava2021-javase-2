@@ -5,7 +5,7 @@ import java.util.Random;
 public class RandomUtils {
 	
 	public static int createIntRandom(int top) {
-		// scope #9
+		
 		Random rand = new Random();
 
 		// Generate random integers in range 0 to top, if top=10 random 0 to 9
@@ -15,7 +15,7 @@ public class RandomUtils {
 	}
 
 	public static char createCharRandom() {
-		// scope #9
+		
 		// Random rand = new Random();
 		// String alphabetChars =
 		// "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";

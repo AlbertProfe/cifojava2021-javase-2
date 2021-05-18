@@ -6,52 +6,42 @@ import java.util.Scanner;
 import model.User;
 
 public class LoginController {
-
 	public static void validateUser() {
 
-		// as Parameter this method gets from MainController scanner-reader and Users
-		// ARRAYLIST
-		ArrayList<User> users = new ArrayList<User>();
-		Scanner reader = new Scanner(System.in);
-		
-		String consoleUser;
-		String passwordConsole;
-		int countNumberofTries = 0;
-		while (countNumberofTries < 5) {
+		// as Parameter this method gets from MainController scanner-reader
+		// and Users ARRAYLIST
 
-			// scanner read userConsole and passwordConsole
-			
-			consoleUser = reader.nextLine();
-			passwordConsole = reader.nextLine();
+		// String consoleUser;
+		// String passwordConsole;
+		// int countNumberofTries = 0;
+		// while (countNumberofTries < 5) {
 
-			if (checkUserAndPasswordWithinArray(consoleUser, passwordConsole )) {
+		// scanner read userConsole and passwordConsole
 
-				//
-				// countNumberofTries ++;
+		// consoleUser = reader.nextLine();
+		// passwordConsole = reader.nextLine();
 
-			}
+		// if (checkUserAndPasswordWithinArray(consoleUser, passwordConsole )) {
 
-		}
+		//
+		// countNumberofTries ++;
+
+		// }
+
+		// }
 
 	}
 
-	public static boolean checkUserAndPasswordWithinArray (String consoleUser, String passwordConsole) {
-		ArrayList<User> users = new ArrayList<User>();
-		
-		for (User usertoCheck : users)  {
-			
-			if (usertoCheck.getName().equals(consoleUser))
-			{// in
-				
-			} 
-				else {
-					//you are out
-				}
-			}
-			
-		
+	public static boolean checkUserAndPasswordWithinArray(String consoleUser, String passwordConsole) {
+
+		/*
+		 * for (User usertoCheck : users) {
+		 * 
+		 * if (usertoCheck.getName().equals(consoleUser)) {// in
+		 * 
+		 * } else { //you are out } }
+		 */
 		return true;
 	}
-		
-
+	
 }
