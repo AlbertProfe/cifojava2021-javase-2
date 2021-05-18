@@ -25,7 +25,9 @@ public class MainController {
 				//UserCreation.createuser(reader);
 
 			} else if (command.equals("login")) {
-				// to-do login
+				// to-do login Login.isValidated(user o users) and return ...
+				//if user isValidated > ExpensesController.run(user or users)
+				// else else 
 				
 			} else if (command.equals("language")) {
 				// to-do language

@@ -1,4 +1,4 @@
-package expensesProject;
+package model;
 
 public class User {
 
@@ -8,10 +8,33 @@ public class User {
 	public String email;
 	public String userName;
 	public String password;
-	public boolean isValidated = false;
+	public static int countUsers = 0;
+	public static String typeUser = "Standard";
+	
+
+	
+	
+	public static String getTypeUser() {
+		return typeUser;
+	}
+
+	public static void setTypeUser(String typeUser) {
+		User.typeUser = typeUser;
+	}
+
+	public static int getCountUsers() {
+		return countUsers;
+	}
+
+	public static void setCountUsers(int countUsers) {
+		User.countUsers = countUsers;
+	}
+	
+	
 
 	public User(String name, String surname, int age, String email, String userName, String password) {
 		super();
+		countUsers++;
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
@@ -22,6 +45,7 @@ public class User {
 
 	public User(String name, String surname, int age, String userName, String password) {
 		super();
+		countUsers++;
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
@@ -30,6 +54,7 @@ public class User {
 	}
 
 	public User() {
+		countUsers++;
 		// TODO Auto-generated constructor stub
 	}
 

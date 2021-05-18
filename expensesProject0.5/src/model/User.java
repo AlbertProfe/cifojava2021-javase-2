@@ -1,4 +1,6 @@
-package expensesProject;
+package model;
+
+import java.util.ArrayList;
 
 public class User {
 
@@ -9,6 +11,8 @@ public class User {
 	public String userName;
 	public String password;
 	public boolean isValidated = false;
+	public boolean isBlocked = false;
+	public ArrayList<Expense> expenses;
 
 	public User(String name, String surname, int age, String email, String userName, String password) {
 		super();
@@ -18,6 +22,7 @@ public class User {
 		this.email = email;
 		this.userName = userName;
 		this.password = password;
+		this.expenses = new ArrayList<Expense>();
 	}
 
 	public User(String name, String surname, int age, String userName, String password) {
@@ -27,10 +32,11 @@ public class User {
 		this.age = age;
 		this.userName = userName;
 		this.password = password;
+		this.expenses = new ArrayList<Expense>();
 	}
 
 	public User() {
-		// TODO Auto-generated constructor stub
+		this.expenses = new ArrayList<Expense>();
 	}
 
 	public String getName() {
@@ -79,6 +85,26 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	
+
+	public boolean isValidated() {
+		return isValidated;
+	}
+
+	public void setValidated(boolean isValidated) {
+		this.isValidated = isValidated;
+	}
+	
+	
+
+	public boolean isBlocked() {
+		return isBlocked;
+	}
+
+	public void setBlocked(boolean isBlocked) {
+		this.isBlocked = isBlocked;
 	}
 
 	@Override

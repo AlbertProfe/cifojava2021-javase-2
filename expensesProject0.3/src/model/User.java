@@ -1,4 +1,4 @@
-package expensesProject;
+package model;
 
 public class User {
 
@@ -8,7 +8,6 @@ public class User {
 	public String email;
 	public String userName;
 	public String password;
-	public boolean isValidated = false;
 
 	public User(String name, String surname, int age, String email, String userName, String password) {
 		super();
