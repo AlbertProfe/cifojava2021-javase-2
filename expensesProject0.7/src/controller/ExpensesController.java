@@ -3,7 +3,7 @@ package controller;
 
 import java.util.Scanner;
 
-import Management.ExpensesManagement;
+import management.ExpensesManagement;
 import model.User;
 
 

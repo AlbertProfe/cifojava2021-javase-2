@@ -1,4 +1,4 @@
-package Management;
+package management;
 
 import java.util.Scanner;
 import model.Expense;
