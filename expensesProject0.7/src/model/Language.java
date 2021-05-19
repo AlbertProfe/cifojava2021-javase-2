@@ -6,20 +6,21 @@ public class Language {
 
 	public String name;
 	public String tag;
-	public HashMap<String, String> prompts;
+	public HashMap<String, String> messages;
+	//public ArrayList<String> countries;
 
 	public Language(String name, String tag) {
 		this.name = name;
 		this.tag = tag;
-		this.prompts = new HashMap<String, String>();
+		this.messages = new HashMap<String, String>();
 	}
 
-	public HashMap<String, String> getPrompts() {
-		return prompts;
+	public HashMap<String, String> getMessage() {
+		return messages;
 	}
 
-	public void setPrompts(HashMap<String, String> prompts) {
-		this.prompts = prompts;
+	public void setMessage(HashMap<String, String> prompts) {
+		this.messages = prompts;
 	}
 
 	public String getName() {

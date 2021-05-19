@@ -15,13 +15,13 @@ public class UserController {
 		
 		User newUser = new User();
 
-		System.out.println(language.getPrompts().get("tellName"));
+		System.out.println(language.getMessage().get("tellName"));
 		newUser.setName(reader.next());
 
-		System.out.println(language.getPrompts().get("tellSurame"));
+		System.out.println(language.getMessage().get("tellSurname"));
 		newUser.setSurname(reader.next());
 
-		System.out.println(language.getPrompts().get("tellAge"));
+		System.out.println(language.getMessage().get("tellAge"));
 		newUser.setAge(reader.nextInt());
 
 		newUser.setUserName(newUser.getName());

@@ -1,5 +1,6 @@
 package menu;
 
+
 public class russianMenu {
 
 	public static void mainMenu() {

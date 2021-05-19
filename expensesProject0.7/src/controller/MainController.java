@@ -11,27 +11,37 @@ import utils.UsersUtils;
 public class MainController {
 
 	public static void AppStarting() {
-
+		
+		//just to store some users we create along the program executes
 		ArrayList<User> users = new ArrayList<User>();
-		HashMap<String, Language> languages = LanguagesController.initLanguages();
+		
+		//declare languages object - type HashMap- and assign the result of
+		//calling at method initLanguages of class LanguageController
+		//initLanguages() is a method we use to initialize languages objects,
+		//so, that is, we are going to create language objects like German, Spanish, etc .. 
+		//and we will store in a hashMap
+		HashMap<String, Language> languagesAvailable = LanguagesController.initLanguages();
 
-		Language language = languages.get("english");
+		//we could user ArrayList .. so ....
+		//ArrayList<Language> languages = LanguagesController.initLanguages();
+		
+		Language languageSelectedApp = languagesAvailable.get("english");
 		Scanner reader = new Scanner(System.in);
 		String command;
 
 		while (true) {
 
-			MenuController.mainMenu(language.getTag());
+			MenuController.mainMenu(languageSelectedApp.getTag());
 			command = reader.next();
 
-			if (command.equals(language.getPrompts().get("quit"))) {
+			if (command.equals(languageSelectedApp.getMessage().get("quit"))) {
 				reader.close();
 				break;
 
-			} else if (command.equals(language.getPrompts().get("create"))) {
-				UserController.createUser(reader, users, language);
+			} else if (command.equals(languageSelectedApp.getMessage().get("create"))) {
+				UserController.createUser(reader, users, languageSelectedApp);
 
-			} else if (command.equals(language.getPrompts().get("login"))) {
+			} else if (command.equals(languageSelectedApp.getMessage().get("login"))) {
 
 				users = LoginController.validateUser(reader, users);
 
@@ -43,13 +53,14 @@ public class MainController {
 					System.out.println("expenses finshing...");
 				}
 
-			} else if (command.equals(language.getPrompts().get("language"))) {
+			} else if (command.equals(languageSelectedApp.getMessage().get("language"))) {
 
-				language = LanguagesController.languageSelection(reader, language, languages);
+				languageSelectedApp = LanguagesController.languageSelection(reader, languageSelectedApp, languagesAvailable);
 
 			} else {
 				System.out.println(
-						"\nPlease, you have to write \"create\", \"login\" or \"quit\". Try another time ...\n");
+						"\nPlease, you have to write \"create\", \"login\" or \"quit\"." 
+				+ " Try another time ...\n");
 
 			}
 

@@ -4,7 +4,7 @@ public class englishMenu {
 
 	public static void mainMenu() {
 
-		System.out.println("\nWelcome to Expenses Managment");
+		System.out.println("\nWelcome to Expenses Managment and users");
 		System.out.println("-------------------------\n");
 		System.out.println("1-Create user");
 		System.out.println("2-Login into Expenses");
