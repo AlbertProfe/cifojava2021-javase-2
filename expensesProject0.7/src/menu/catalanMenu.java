@@ -7,8 +7,8 @@ public class catalanMenu {
 		System.out.println("\nBenvingut a Programari de Desepeses i usuaris");
 		System.out.println("-------------------------\n");
 		System.out.println("1-Crear usuari");
-		System.out.println("2-Login a Despeses");
-		System.out.println("3-Llengua");
+		System.out.println("2-Accedir a Despeses");
+		System.out.println("3-Idioma");
 		System.out.println("4-Sortir");
 		System.out.print("Opció: ");
 

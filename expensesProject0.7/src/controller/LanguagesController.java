@@ -24,12 +24,12 @@ public class LanguagesController {
 
 		return language;
 
-		// to-do while ....
+		// pending to-do while with all the OPTION v2.0 ....
 	}
 
 	public static HashMap<String, Language> initLanguages() {
 
-		//we are declaring languagesInit of type hashMap and assign a new object HashMap
+		//we are declaring languagesInit of type hashMap and assigning a new object HashMap
 		HashMap<String, Language> languagesInit = new HashMap<String, Language>();
 		
 		//declare english object type Language class and assign the result

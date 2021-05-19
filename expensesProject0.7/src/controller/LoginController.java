@@ -40,6 +40,7 @@ public class LoginController {
 			if (count == 4)
 				// to-do it is just a print line
 				//we need to set field isBlocked to false
+				//pending to-do: go to the OPTION v2.0
 				System.out.println("User blocked!");
 
 		} while (count < 4);

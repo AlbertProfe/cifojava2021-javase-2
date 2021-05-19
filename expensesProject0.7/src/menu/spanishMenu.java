@@ -7,10 +7,10 @@ public class spanishMenu {
 		System.out.println("\nBienvenido a Programa de Gastos y Usuarios");
 		System.out.println("-------------------------\n");
 		System.out.println("1-Crear usuario");
-		System.out.println("2-Login a Gastos");
-		System.out.println("3-Lengua");
+		System.out.println("2-Acceder a Gastos");
+		System.out.println("3-Idioma");
 		System.out.println("4-Salir");
-		System.out.print("Opción: ");
+		System.out.print("OpciÃ³n: ");
 
 	}
 
@@ -21,24 +21,24 @@ public class spanishMenu {
 		
 		System.out.println("\nBienvenido a Menu de gastos");
 		System.out.println("-------------------------\n");
-		System.out.println("1-Añadir gasto");
+		System.out.println("1-AÃ±adir gasto");
 		System.out.println("2-Borrar gasto");
 		System.out.println("3-Modificar gasto");
 		System.out.println("4-Listar gasto");
 		System.out.println("5-Salir");
-		System.out.print("Opción: ");
+		System.out.print("OpciÃ³n: ");
 	}
 
 	public static void languagesMenu() {
 
 		System.out.println("\nBienvenido a Menu de Idiomas");
 		System.out.println("-------------------------\n");
-		System.out.println("1-Inglés");
+		System.out.println("1-InglÃ©s");
 		System.out.println("2-Catalan");
-		System.out.println("3-Español");
+		System.out.println("3-EspaÃ±ol");
 		System.out.println("4-Ruso");
 		System.out.println("5-Salir");
-		System.out.print("Opción: ");
+		System.out.print("OpciÃ³n: ");
 	}
 
 }

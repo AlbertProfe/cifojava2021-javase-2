@@ -11,20 +11,22 @@ import utils.UsersUtils;
 public class MainController {
 
 	public static void AppStarting() {
-		
-		//just to store some users we create along the program executes
+
+		// just to store some users we create along the program executes
 		ArrayList<User> users = new ArrayList<User>();
-		
-		//declare languages object - type HashMap- and assign the result of
-		//calling at method initLanguages of class LanguageController
-		//initLanguages() is a method we use to initialize languages objects,
-		//so, that is, we are going to create language objects like German, Spanish, etc .. 
-		//and we will store in a hashMap
+
+		// declare languages object - type HashMap- and assign the result of
+		// calling at method initLanguages of class LanguageController
+		// initLanguages() is a method we use to initialize languages objects,
+		// so, that is, we are going to create language objects like German, Spanish,
+		// etc ..
+		// and we will store in a hashMap
 		HashMap<String, Language> languagesAvailable = LanguagesController.initLanguages();
 
-		//we could user ArrayList .. so ....
-		//ArrayList<Language> languages = LanguagesController.initLanguages();
-		
+		// we could user ArrayList .. so ....
+		// ArrayList<Language> languages = LanguagesController.initLanguages();
+
+		// we set english as default language of the app
 		Language languageSelectedApp = languagesAvailable.get("english");
 		Scanner reader = new Scanner(System.in);
 		String command;
@@ -55,12 +57,13 @@ public class MainController {
 
 			} else if (command.equals(languageSelectedApp.getMessage().get("language"))) {
 
-				languageSelectedApp = LanguagesController.languageSelection(reader, languageSelectedApp, languagesAvailable);
+				languageSelectedApp = LanguagesController.languageSelection(reader, languageSelectedApp,
+						languagesAvailable);
 
 			} else {
 				System.out.println(
-						"\nPlease, you have to write \"create\", \"login\" or \"quit\"." 
-				+ " Try another time ...\n");
+						"\nPlease, you have to write \"create\", \"login\" or \"quit\". ");
+				System.out.println("Try another time ...\n");
 
 			}
 
