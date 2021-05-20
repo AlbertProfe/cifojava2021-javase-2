@@ -1,5 +1,8 @@
 package languages;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -57,6 +60,13 @@ public class EnglishLanguage {
 		english.getMessage().put("list", "list");
 		english.getMessage().put("list", "\nList of expenses: ");
 		english.getMessage().put("todayDate", "Today date is : ");
+		
+		english.getMessage().put("showExpenseName", "Expense value: ");
+		english.getMessage().put("questionUpdateValue", ". Do you want to update expense value? (Y/N) ");
+		english.getMessage().put("showExpenseDate", "Expense date: ");
+		english.getMessage().put("questionUpdateDate", ". Do you want to update expense date? (Y/N) ");
+		english.getMessage().put("expenseDate", "Enter expense date (dd/MM/yyyy): ");
+		english.getMessage().put("invalidFormat", "Not updated! Invalid format!");
 		
 		
 		
