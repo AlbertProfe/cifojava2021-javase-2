@@ -37,8 +37,8 @@ public class ExpensesManagement {
 		for (Expense expense : userValidated.getExpenses()) {
 
 			if (expenseName.equals(expense.getName())) {
-				System.out.println(expense + " deleting ....\n");
 				
+				System.out.println(expense + " deleting ....\n");
 				userValidated.delete(expense);
 				System.out.println(expense + " deleted!");
 				return true;

@@ -44,7 +44,8 @@ public class MainController {
 				break;
 
 			} else if (command.equals(languageSelectedApp.getMessage().get("create"))) {
-				UserController.createUser(reader, users, languageSelectedApp);
+				UserController.runUsers(reader, users, languageSelectedApp);
+				
 
 			} else if (command.equals(languageSelectedApp.getMessage().get("login"))) {
 
