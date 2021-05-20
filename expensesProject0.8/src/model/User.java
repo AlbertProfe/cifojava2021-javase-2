@@ -34,6 +34,14 @@ public class User {
 		this.password = password;
 		this.expenses = new ArrayList<Expense>();
 	}
+	
+	public User(String userName, String password) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.isValidated = true;
+		this.expenses = new ArrayList<Expense>();
+	}
 
 	public User() {
 		this.expenses = new ArrayList<Expense>();

@@ -55,7 +55,9 @@ public class EnglishLanguage {
 		english.getMessage().put("delete", "delete");
 		english.getMessage().put("update", "update");
 		english.getMessage().put("list", "list");
-	
+		english.getMessage().put("list", "\nList of expenses: ");
+		english.getMessage().put("todayDate", "Today date is : ");
+		
 		
 		
 		// use languageInit type HashMap to choose the language

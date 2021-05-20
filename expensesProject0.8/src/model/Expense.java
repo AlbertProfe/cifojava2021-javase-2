@@ -9,9 +9,16 @@ public class Expense {
 	public Date date;
 
 	public Expense(String name, double value) {
-		super();
+		
 		this.name = name;
 		this.value = value;
+	}
+
+	public Expense(String expenseName, double valueExpense, Date todayDate) {
+		
+		this.name = expenseName;
+		this.value = valueExpense;
+		this.date = todayDate;
 	}
 
 	public String getName() {

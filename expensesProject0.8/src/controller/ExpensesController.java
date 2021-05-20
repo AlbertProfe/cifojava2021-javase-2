@@ -10,11 +10,13 @@ import model.User;
 public class ExpensesController {
 
 	public static void runExpenses(Scanner reader, User userValidated) {
+		
+		String command;
 
 		while (true) {
 
 			MenuController.expensesMenu("eng");
-			String command = reader.next();
+			command = reader.next();
 
 			if (command.equals("quit")) {
 				break;
