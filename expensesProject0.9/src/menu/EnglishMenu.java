@@ -14,9 +14,6 @@ public class EnglishMenu {
 
 	}
 
-	public static void loginMenu() {
-	}
-
 	public static void expensesMenu() {
 		
 		System.out.println("\nWelcome to Expenses Menu");

@@ -13,9 +13,6 @@ public class CatalanMenu {
 		System.out.print("Opció: ");
 
 	}
-	
-	public static void loginMenu() {
-	}
 
 	public static void expensesMenu() {
 		

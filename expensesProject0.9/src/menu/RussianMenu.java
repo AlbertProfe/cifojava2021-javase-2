@@ -14,9 +14,6 @@ public class RussianMenu {
 
 	}
 
-	public static void loginMenu() {
-	}
-
 	public static void expensesMenu() {
 
 		System.out.println("\n Добро пожаловать в меню расходов");
@@ -40,7 +37,7 @@ public class RussianMenu {
 		System.out.println("4-Русский");
 		System.out.println("5-Выход");
 		System.out.print("Выбрать: ");
-
+		
 	}
 
 }
