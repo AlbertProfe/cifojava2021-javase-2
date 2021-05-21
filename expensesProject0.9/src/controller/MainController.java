@@ -15,7 +15,7 @@ public class MainController {
 		// just to store some users we create along the program executes
 		ArrayList<User> users = new ArrayList<User>();
 		
-		//fake user to test expenses
+		//fake user to test expenses without the need of creating a new user
 		users.add(new User ("1", "1"));
 
 		// declare languages object - type HashMap- and assign the result of
