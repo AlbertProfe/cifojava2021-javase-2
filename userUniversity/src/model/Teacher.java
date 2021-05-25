@@ -24,6 +24,7 @@ public class Teacher extends Employee {
 
 	@Override
 	public String toString() {
+		
 		return "Teacher [extraSalaryPerCourse=" + extraSalaryPerCourse + ", salary=" + salary + ", name=" + name
 				+ ", surname=" + surname + ", age=" + age + "]";
 	}

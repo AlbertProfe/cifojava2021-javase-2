@@ -12,7 +12,7 @@ public class Test {
 		
 		System.out.println(sergii);
 		
-		User borja = new Employee("", "", 25, 2500);
+		User borja = new Employee("Borja", "Gasol", 25, 2500);
 		
 		List<User > users = new ArrayList<User>();
 		
