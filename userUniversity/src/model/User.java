@@ -80,7 +80,6 @@ public class User {
 		
 	}
 
-
 	public ArrayList<Expense> getExpenses() {
 		return expenses;
 	}
@@ -137,8 +136,6 @@ public class User {
 		this.password = password;
 	}
 	
-	
-
 	public boolean isValidated() {
 		return isValidated;
 	}
@@ -159,7 +156,8 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", surname=" + surname + ", age=" + age + ", email=" + email + ", userName="
+		
+		return name + "\nUser [name=" + name + ", surname=" + surname + ", age=" + age + ", email=" + email + ", userName="
 				+ userName + ", password=" + password + "]";
 	}
 

@@ -12,7 +12,6 @@ public class Student extends User {
 	public Student(String name, String surname, int age, String email,
 			boolean active) {
 		
-		
 		super(name, surname, age, email);
 		
 		this.marks = new HashMap<String, Double>();
@@ -47,11 +46,7 @@ public class Student extends User {
 	@Override
 	public String toString() {
 	
-		return "Student [marks=" + marks + ", active=" + active + ", inscriptionDate=" + inscriptionDate +  " ]";
+		return "Student [marks=" + marks + ", active=" + active + ", inscriptionDate=" + inscriptionDate +  "]";
 	}
-
-	
-	
-	
 
 }

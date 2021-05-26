@@ -22,7 +22,8 @@ public class Employee extends User {
 
 	@Override
 	public String toString() {
-		return "Employee [salary=" + "salary ]";
+		
+		return super.toString() + "\nEmployee [salary=" + salary + "]";
 	}
 	
 	

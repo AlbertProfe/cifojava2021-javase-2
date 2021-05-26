@@ -10,8 +10,6 @@ public class Teacher extends Employee {
 		super(name, surname, age, salary);
 		
 		this.extraSalaryPerCourse = extraSalaryPerCourse;
-		
-		
 	}
 
 	public double getExtraSalaryPerCourse() {
@@ -25,7 +23,8 @@ public class Teacher extends Employee {
 	@Override
 	public String toString() {
 		
-		return "Teacher [extraSalaryPerCourse=" + extraSalaryPerCourse + " ]";
+			
+		return super.toString()	 + "\nTeacher [extraSalaryPerCourse=" + extraSalaryPerCourse + "]";
 	}
 	
 	

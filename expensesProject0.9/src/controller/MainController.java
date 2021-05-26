@@ -66,8 +66,8 @@ public class MainController {
 
 			} else {
 				System.out.println(
-						"\nPlease, you have to write \"create\", \"login\" or \"quit\". ");
-				System.out.println("Try another time ...\n");
+						languageSelectedApp.getMessage().get("badinputMain"));
+				System.out.println(languageSelectedApp.getMessage().get("tryAnother"));
 
 			}
 
