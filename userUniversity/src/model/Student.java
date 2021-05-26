@@ -47,8 +47,7 @@ public class Student extends User {
 	@Override
 	public String toString() {
 	
-		return "Student [marks=" + marks + ", active=" + active + ", inscriptionDate=" + inscriptionDate + ", name="
-				+ name + ", surname=" + surname + ", age=" + age + "]";
+		return "Student [marks=" + marks + ", active=" + active + ", inscriptionDate=" + inscriptionDate +  " ]";
 	}
 
 	

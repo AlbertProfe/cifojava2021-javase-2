@@ -1,7 +1,11 @@
-package model;
+package userUniversityTest;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import model.Employee;
+import model.Student;
+import model.User;
 
 public class Test {
 
@@ -18,6 +22,11 @@ public class Test {
 		
 		users.add(sergii);
 		users.add(borja);
+		users.add(isa);
+		
+		System.out.println(users);
+		
+		
 	}
 
 }

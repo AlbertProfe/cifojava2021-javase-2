@@ -6,7 +6,9 @@ public class Employee extends User {
 		
 	public Employee(String name, String surname, int age,
 			double salary) {
+		
 		super(name, surname, age);
+		
 		this.salary = salary;
 	}
 
@@ -20,7 +22,7 @@ public class Employee extends User {
 
 	@Override
 	public String toString() {
-		return "Employee [salary=" + salary + ", name=" + name + ", surname=" + surname + ", age=" + age + "]";
+		return "Employee [salary=" + "salary ]";
 	}
 	
 	
